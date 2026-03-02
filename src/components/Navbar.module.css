@@ -1,0 +1,154 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 5px 20px rgba(255, 0, 0, 0.2);
+}
+
+/* Logo & Name */
+.name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff1a1a;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nameHighlight {
+  color: #ff1a1a;
+}
+
+/* Desktop Menu */
+.menuItems {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menuItems li a {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Red underline animation */
+.menuItems li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff1a1a;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.menuItems li a:hover {
+  color: #ff1a1a;
+}
+
+.menuItems li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger */
+.menuBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 28px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 2px;
+  background: #ff1a1a;
+  transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile Menu */
+.mobileMenuItems {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background: #0a0a0a;
+  padding-top: 120px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  box-shadow: -5px 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.mobileMenuItems li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mobileMenuItems li a:hover {
+  color: #ff1a1a;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menuItems {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+}

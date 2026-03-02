@@ -1,0 +1,104 @@
+.profilesSection {
+  padding: 100px 0;
+  background: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #ff0000, #ffffff);
+}
+
+/* Grid */
+.profilesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* Card */
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #111;
+  padding: 35px 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Hover Effect */
+.profileCard:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  transform: translateY(-8px);
+}
+
+/* Icon */
+.profileIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  transition: 0.3s ease;
+}
+
+.profileCard:hover .profileIcon {
+  transform: scale(1.2);
+}
+
+/* Name */
+.profileName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Visit Link */
+.visitLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ff0000;
+  transition: 0.3s ease;
+}
+
+.profileCard:hover .visitLink {
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .profilesGrid {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profilesSection {
+    padding: 70px 5%;
+  }
+}

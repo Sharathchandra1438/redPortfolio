@@ -1,0 +1,124 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #0d0d0d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+/* Main Content */
+.heroContent {
+  max-width: 750px;
+  position: relative;
+}
+
+/* Profile Image */
+.imageWrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2rem auto;
+}
+
+.heroImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff1a1a;
+  z-index: 2;
+  position: relative;
+}
+
+/* Name */
+.name {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Roles */
+.roles {
+  font-size: 1.3rem;
+  color: #ff1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #d6d6d6;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+/* Primary */
+.primaryBtn {
+  background: #ff1a1a;
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.primaryBtn:hover {
+  background: white;
+  color: black;
+  transform: translateY(-3px);
+}
+
+/* Secondary */
+.secondaryBtn {
+  border: 2px solid #ff1a1a;
+  color: #ff1a1a;
+}
+
+.secondaryBtn:hover {
+  background: #ff1a1a;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .imageBorder {
+    width: 196px;
+    height: 196px;
+  }
+
+  .roles {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
