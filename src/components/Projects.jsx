@@ -12,6 +12,7 @@ import aes from "/assets/aes.png";
 import sp from "/assets/sp.png";
 import yuga from "/assets/yuga.png";
 import cshub from "/assets/cshub.png";
+import q from "/assets/q.png";
 
 const Projects = () => {
 const projects = [
@@ -139,6 +140,17 @@ const projects = [
         live: "https://movierecommendition-sh6.streamlit.app",
         github: "https://github.com/Sharathchandra1438/movieRecommendition",
         category: "AI"
+    }
+    ,
+    {
+      id: 13,
+      title: "Duplicate Question Detector (Streamlit)",
+      description:
+      "Checks whether two questions are duplicates using ML models and a TF-IDF + fuzzy fallback.",
+      image: q,
+      live: "https://questions-duplicate-6.streamlit.app/",
+      github: "#",
+      category: "AI"
     }
 ];
 
