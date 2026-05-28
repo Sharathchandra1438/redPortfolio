@@ -19,6 +19,7 @@ const Navbar = () => {
     "About",
     "Skills",
     "Projects",
+    "Automation",
     "Experience",
     "TechProfiles",
     "Contact",

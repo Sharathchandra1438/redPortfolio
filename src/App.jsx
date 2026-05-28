@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import TechProfiles from './components/TechProfiles'
 import Experience from './components/Experience'
+import AutomationProjects from './components/AutomationProjects'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Skills />
       <Projects />
+      <AutomationProjects />
       <TechProfiles />
       <ContactMe />
     </div>

@@ -50,6 +50,12 @@ const Skills = () => {
       "Feature Engineering"
     ],
 
+    "Automation & Orchestration": [
+      "n8n",
+      "Workflow Automation",
+      "AI Automation"
+    ],
+
     "Data Science & Visualization": [
       "Pandas",
       "NumPy",

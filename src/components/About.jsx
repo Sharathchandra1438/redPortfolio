@@ -43,7 +43,7 @@ const About = () => {
           <div className={styles.card}>
             <p>
               I am a passionate <span>AI & ML Engineer</span> and
-              <span> Full Stack Developer</span> currently pursuing my
+              <span> Full Stack Developer</span> currently in my 4th year of
               B.Tech at <span>JNTUH College of Engineering, Sultanpur</span>.
             </p>
 
